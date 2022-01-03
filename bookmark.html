@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>:D plate</title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+        .back {
+            height: 86%;
+            width: 100%;
+            background: #F6F6F6;
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            transform: translate(-30%, -30%);
+        }
+        .mid{
+            position: absolute;
+            height: 70%;
+            width: 80%;
+            top: 80%;
+            left: 70%;
+            transform: translate(-75%, -75%);
+            z-index: 1;
+           background: rgb(255, 255, 255);
+        }
+        #myMenu {
+            height: 100%;
+            width: 180px;
+            border-right: 1px solid gray;
+            z-index: 1;
+        }
+
+        #myMenu>p {
+            text-align: center;
+            font-size: 23px;
+            font-weight: 900;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        #myMenu>ul>li {  
+            position: relative;
+            right: 8px;
+           text-align: center; 
+            list-style: none;            
+        }
+        
+        #myContent {
+            position: absolute;
+            width: 70%;
+            right: 7%;
+            height: 500px;
+            overflow:auto;
+            overflow-x: hidden;
+            
+        }
+
+        #myTitle {
+            position: relative;
+            left: 25px;
+            top: 25px;
+            
+        }
+        #myInfo {
+            border-bottom: solid 2px;
+            height: 25%;
+        }
+        #myInfoContent{
+            float: right;
+            width: 78%;
+            height: 100%;
+        }
+        #email{
+            position: relative;
+            left: 15px;
+            top: 30px;
+            font-size: 15px;
+        }
+        #nickName{
+            position: relative;
+            left: 15px;
+            top: 45px;
+            font-size: 20px;
+        }
+        #updateInfo{
+            margin: 25px;
+            
+        }
+        #updateInfo > div:nth-child(odd) {
+            background-color: rgb(245, 167, 245);
+            font-weight: 600;
+            height: 80px;
+        }
+        #updateInfo > div:nth-child(even) {
+            background-color: rgb(248, 213, 242);
+            font-weight: 600;
+            height: 80px;
+        }
+       
+        </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+    <header id="header">
+        <div class="inner">
+
+            <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/D.png" alt="" /></span>
+                    
+                </a>
+            <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+                
+        </div>
+    </header>
+    <!-- 마이페이지 -->
+        
+        <div class="back"></div>
+        <div class="mid">
+
+            <div id="myContent">
+
+                <div id="myInfo">
+               
+                       <h3 id="nickName">즐겨찾기 관리</h3>
+                
+                </div>
+
+                <h2 id="myTitle"></h2>
+            
+                <div id="updateInfo">
+                
+                    <div> 
+                        a즐겨찾기
+                        
+                    </div>
+                    
+                            
+                    <div>
+                        b즐겨찾기
+                    
+                    </div>
+
+                        
+                    <div> 
+                        c즐겨찾기   
+
+                    </div>
+
+                    <div> 
+                        d즐겨찾기
+                        
+                    </div>
+
+                
+
+                </div>
+                
+
+                
+            </div>
+
+            <div id="myMenu">
+                
+                <br><br>
+
+                <p>마이페이지</p>
+            
+                <ul>
+                    <!-- main.css에서 a태그만 손봄 -->
+                    <li><a href="#">예약정보 관리</a></li>
+                    <br>
+                    <li><a href="#">개인정보 수정</a></li>
+                    <br>
+                    <li><a href="#">즐겨찾기 관리</a></li>
+                    <br>
+                    <li><a href="#">리뷰 관리</a></li>
+                    <br>
+                    <li><a href="#">Q&A 관리</a></li>
+                </ul>
+                
+            </div>
+            
+            
+        </div>
+  
+    <!-- Menu -->
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generic.html">Ipsum veroeros</a></li>
+            <li><a href="generic.html">Tempus etiam</a></li>
+            <li><a href="generic.html">Consequat dolor</a></li>
+            <li><a href="elements.html">Elements</a></li>
+        </ul>
+    </nav>
+    </div>
+
+
+            <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
